@@ -169,7 +169,7 @@ main {
   text-transform: uppercase;
   user-select: none;
   box-shadow: var(--shadow-soft);
-  color: #ffffff !important; /* ALWAYS white text */
+  color: #ffffff !important; /* default: white text in dark mode */
 }
 
 /* Flip animation */
@@ -198,7 +198,7 @@ main {
     transform: scale(1.1);
   }
   60% {
-    transform: scale(0.95);
+    scale(0.95);
   }
   100% {
     transform: scale(1);
@@ -226,6 +226,22 @@ main {
   background-color: var(--color-tile-absent);
   border-color: var(--color-tile-absent);
   color: #ffffff !important;
+}
+
+/* -------- LIGHT MODE TEXT FIX -------- */
+
+@media (prefers-color-scheme: light) {
+  /* Base tiles: black text */
+  .tile {
+    color: #111827 !important;
+  }
+
+  /* Colored state tiles MUST stay white */
+  .tile.correct,
+  .tile.present,
+  .tile.absent {
+    color: #ffffff !important;
+  }
 }
 
 /* -------- KEYBOARD -------- */
