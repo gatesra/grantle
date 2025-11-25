@@ -77,24 +77,23 @@ body {
   padding: 8px 0 12px;
 }
 
-/* ---- LOGO SUPPORT ---- */
+/* -------- LOGO SUPPORT -------- */
 
 .logo-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 4px;
-  margin-bottom: 6px;
+  padding: 4px 0 6px;
 }
 
 .logo {
-  max-width: 260px;
-  width: 70%;
+  max-width: 220px;
+  width: 60%;
   height: auto;
   display: block;
 }
 
-/* Default: show DARK logo */
+/* Default: DARK MODE logo shown */
 .logo-dark {
   display: block;
 }
@@ -102,7 +101,7 @@ body {
   display: none;
 }
 
-/* Light mode → swap */
+/* Light Mode Swap */
 @media (prefers-color-scheme: light) {
   .logo-dark {
     display: none;
@@ -170,7 +169,7 @@ main {
   text-transform: uppercase;
   user-select: none;
   box-shadow: var(--shadow-soft);
-  color: #ffffff !important; /* Always white */
+  color: #ffffff !important; /* ALWAYS white text */
 }
 
 /* Flip animation */
@@ -214,19 +213,19 @@ main {
 .tile.correct {
   background-color: var(--color-tile-correct);
   border-color: var(--color-tile-correct);
-  color: #fff !important;
+  color: #ffffff !important;
 }
 
 .tile.present {
   background-color: var(--color-tile-present);
   border-color: var(--color-tile-present);
-  color: #fff !important;
+  color: #ffffff !important;
 }
 
 .tile.absent {
   background-color: var(--color-tile-absent);
   border-color: var(--color-tile-absent);
-  color: #fff !important;
+  color: #ffffff !important;
 }
 
 /* -------- KEYBOARD -------- */
@@ -247,7 +246,6 @@ main {
   gap: 6px;
 }
 
-/* Base key styling */
 .key {
   display: flex;
   justify-content: center;
