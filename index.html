@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>GRANTLE</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="game-container">
+    <header class="game-header">
+  <div class="logo-container" aria-label="Grantle">
+    <!-- Dark-mode logo -->
+    <img
+      src="grantle-dark-logo.png"
+      alt="Grantle"
+      class="logo logo-dark"
+    />
+    <!-- Light-mode logo -->
+    <img
+      src="grantle-light-logo.png"
+      alt="Grantle"
+      class="logo logo-light"
+    />
+  </div>
+</header>
+
+    <main>
+      <div id="message" class="message"></div>
+
+      <div id="board" class="board" aria-label="Word guess grid"></div>
+
+      <div class="subheader">
+        <span id="day-label"></span>
+      </div>
+
+      <div id="keyboard" class="keyboard" aria-label="On-screen keyboard"></div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
